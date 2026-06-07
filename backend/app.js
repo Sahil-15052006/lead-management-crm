@@ -5,7 +5,7 @@ import cors from 'cors'
 
 const app = express();
 app.use(cors({
-  origin:"sahil-15052006-lead-management-crm.vercel.app"
+  origin:"*"
 }));
 app.use(express.json())
 app.use('/leads',leadRoutes);
